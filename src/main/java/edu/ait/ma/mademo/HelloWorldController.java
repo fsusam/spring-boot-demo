@@ -199,9 +199,4 @@ public class HelloWorldController {
     public String notAllowed(){
         throw new ForbiddenException();
     }
-
-    @GetMapping("/varargsTest")
-    public String varargsTest(@RequestParam String... message){
-        return message[0] + message[1];
-    }
 }
